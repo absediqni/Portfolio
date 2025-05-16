@@ -59,7 +59,7 @@
       <article class="post featured" data-tags="SQL,Data Cleaning">
         <header>
           <h2>Data Cleaning in SQL</h2>
-          <p>In this project we took a raw layoffs data and transform it in SQL Server to make it more usable for analysis layoffs across diffrent parts of the world.</p>
+          <p>In this project, we processed raw global layoffs data in SQL Server, cleaning and structuring it to enable effective analysis.</p>
         </header>
         <a href="https://github.com/absediqni/Portfolio/blob/main/Q_DataCleaning.sql">
           <img src="Images/layoffs.jpg" alt="Layoffs">
@@ -76,8 +76,8 @@
           <header>
             <h2>Top UK YouTubers 2024</h2>
           </header>
-          <p>This project analyzes the top UK-based YouTube channels in 2024 to identify influencers for marketing campaigns. By leveraging a dataset from Kaggle, I extracted key metrics such as subscriber counts and average video views to determine the most influential YouTubers.
-          <img src="Images/youtube.png" alt="Top UK YouTuber s">
+          <p>This project analyzes the top UK-based YouTube channels in 2024 to identify influencers for marketing campaigns. By leveraging a dataset from Kaggle, I extracted key metrics such as subscriber counts and average video views to determine the most influential YouTubers.  Ready to see how these dashboards drive decisions?
+          <img src="Images/youtube1.png" alt="Top UK YouTuber s">
           </p>
           
           <div class="actions">
@@ -88,10 +88,10 @@
             <h2>Blinkit Sales Dashboard</a></h2>
           </header>
          
-          <p>In this project we use Microsoft Excel to clean, transform, validate and visualise blinkit data (Indian's Last minutes app).</p>
+          <p>How can data fuel growth for a quick-commerce platform? I explored BlinkIt’s sales dataset, revealing $1.2M in revenue across 8,523 transactions, averaging $141 per sale, with a 4.0 customer rating. By cleaning the data, performing in-depth Excel analysis, and building an interactive dashboard, I identified actionable strategies to boost performance. Ready to see the insights that could redefine BlinkIt’s success?</p>
           <img src="Images/Blinkit.png" alt="Blinkit Image">
           <div class="actions">
-            <a href="https://github.com/absediqni/Portfolio/blob/main/dataset/BlinkIT%20DB.xlsx">View Project</a>
+            <a href="Blinkit.html">See Details</a>
           </div>
         </article>
         
@@ -100,12 +100,12 @@
             <h2>Tableau Dashboards</h2>
           </header>
           
-          <p>Tableau Dashboards for projects on AirBnB, Factory downtime, and Movie Data.</p>
+          <p>What can data reveal about hospitality, manufacturing, and entertainment? I developed interactive Tableau dashboards for AirBnB, factory downtime, and movie data projects, transforming raw data into strategic insights. These visualizations optimize pricing, streamline operations, and uncover audience trends.</p>
           <a href="https://public.tableau.com/app/profile/abubakar.nuhu/vizzes">
             <img src="Images/tableau.jpg" alt="Tableau Image">
           </a>
           <div class="actions">
-            <a href="https://public.tableau.com/app/profile/abubakar.nuhu/vizzes">View Project</a>
+            <a href="https://public.tableau.com/app/profile/abubakar.nuhu/vizzes">Click Here</a>
           </div></article>
 
       </div>
@@ -137,35 +137,7 @@
     </div>
   </div>
 
-  <script>
-    // Smooth scrolling
-    function scrollToSection(id) {
-      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-    }
-
-    // Project filtering
-    const filterButtons = document.querySelectorAll('.filter button');
-    const posts = document.querySelectorAll('.post');
-
-    filterButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        const filter = button.getAttribute('data-filter');
-
-        // Update active button
-        filterButtons.forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
-
-        // Filter posts
-        posts.forEach(post => {
-          const tags = post.getAttribute('data-tags').split(',');
-          if (filter === 'All' || tags.includes(filter)) {
-            post.style.display = 'block';
-          } else {
-            post.style.display = 'none';
-          }
-        });
-      });
-    });
-  </script>
+ <!-- JavaScript-->
+  <script src="script.js"></script>
 </body>
 </html>
