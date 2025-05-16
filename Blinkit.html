@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Actionable insights from data using dashboards of analyzed and transformed data">
+  <meta name="keywords" content="data analyst, dashboard builder, data cleaning, data analysis, data entry, power BI, SQL, tableau">
+  <meta name="author" content="Nuhu ABSediq">
+  <title>Absediq The Analyst</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+  <div id="wrapper" class="fade-in">
+    <!-- Intro -->
+    <div id="intro">
+      <h1>Nuhu Abubakar<br>Portfolio</h1>
+      <p>Data Analyst well versed in SQL, Python, Tableau, Power BI <a href="https://www.linkedin.com/in/absediqni">@absediqni</a>.</p>
+    </div>
+    <!-- header -->
+        <header id="header">
+      <div class="container">
+        <a href="#" class="logo" onclick="scrollToSection('main')">Turning Data into Growth</a>
+           
+      </div>
+      <p>BlinkIt Case Study</p>
+    </header>
+
+    <!-- Nav -->
+    <nav id="nav">
+      <div class="container">
+        <ul class="links">
+          <li><a href="#" onclick="scrollToSection('intro')">Home</a></li>
+        </ul>
+        <ul class="icons">
+          <li><a href="https://x.com/Absediqn"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/absediqni/"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/absediqni"><i class="fab fa-github"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main -->
+    <div id="main" class="container">
+
+        <!-- post -->
+      <article class="details" data-tags="SQL,Data Cleaning,Excel, Visualisation">
+          <h2>Project Overview</h2>
+          
+       
+          
+          <p>I took on BlinkIt’s sales dataset to uncover actionable insights for a quick-commerce platform. With <span class="highlight">$1.2M</span> in total sales across 8,523 transactions, an average of <span class="highlight">$141</span> per sale, and a <span class="highlight">4.0</span> customer rating, I aimed to identify growth opportunities through data cleaning, analysis, and visualization in Excel, culminating in a dynamic dashboard.</p>
+    
+        
+          <h2>Project Objectives</h2>
+            <ul>
+                <li>To analyze BlinkIt’s sales data, validate and transform it into actionable insights using Excel, and develop a dynamic dashboard to identify growth opportunities.</li>
+                <li>To uncover trends in outlet performance, product preferences, and revenue distribution, enabling a strategic plan to scale Tier 3 outlets, prioritize low-fat/health-focused products, and optimize the supermarket channel.</li>
+                <li>Ultimately driving the platform’s growth to exceed $1.2M in total sales.</li>
+            </ul>
+        
+        
+        
+            <h2>Tools Used</h2>
+            <ul>
+                <li>Microsoft Excel</li>
+            </ul>
+      
+            <h2>Data Source</h2>
+            <p class="data-source">The dataset was sourced from Data Tutorial: <a href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbmRhWkNWSi1vdl83VDdtU2hhWHdxZFlFWTZUUXxBQ3Jtc0tscktWRUFMWDNWdTR3SmJXZmwxN28xd1dYRktoYWxQbm9FaWVkNVhHaFRQRlYwSEd5VFpTem9fY1FmQkpsbkJ3Sng4MjJsM084bmVXS0xMbldtejdYU2kyM3pEbEl6b3BTNEEtT0hCdnNtMmhhMjdtVQ&q=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1Mlc_fvIrK793HedcpwbEpv13LdAs4yBg%3Fusp%3Dsharing&v=klZj_282ApY" target="_blank">Blinkit Sales Dataset</a>. It includes details such as items type, fat contnet, year of establishment, Sales, and other sales details.</p>
+        
+        
+            <h2>Steps Taken: From Raw Data to Dashboard</h2>
+        <ul>
+            <li><strong>Data Validation in Excel:</strong> I started by cleaning the dataset—removing blank rows and duplicates using Excel’s “Remove Duplicates” feature. I validated the “Item Type” column with Data Validation to ensure consistency, and used IF functions (e.g., <code>IF(ISBLANK(A2),"Missing",A2)</code>) to flag incomplete entries.</li>
+            <li><strong>Analysis with Pivot Tables:</strong> I created Pivot Tables to summarize sales by outlet tier, fat content, and item type. For example, I grouped sales data by “Outlet Size” to calculate totals like <span class="highlight">$427.1K</span> for Tier 3, and used filters to break down fat content (49% low-fat, 51% regular).</li>
+            <li><strong>Visualization:</strong> I built dynamic charts—pie charts for fat content (showing 49% low-fat), bar charts for outlet types (supermarkets at <span class="highlight">$207.5K</span>), and line graphs for outlet establishment trends (peaking at <span class="highlight">$204.5K</span> in 2022).</li>
+            <li><strong>Dashboard Creation:</strong> I combined these visuals into a dynamic Excel dashboard using slicers for interactive filtering by outlet size and item type, enabling real-time insights into sales trends and customer preferences.</li>
+        </ul>
+        
+            <h2>Key Insights from the Dashboard</h2>
+            <p>Through comprehensive analysis, the following insights were uncovered:</p>
+            <ul>
+              <li><strong>Outlet Size Impact:</strong> Tier 1 (small) outlets contribute <span class="highlight">$336.4K</span>, Tier 2 (medium) deliver <span class="highlight">$393.1K</span>, and Tier 3 (large) lead at <span class="highlight">$427.1K</span>—bigger outlets drive more revenue.</li>
+              <li><strong>Growth Trend:</strong> Outlet establishment sales grew steadily from 2011 to 2022, peaking at <span class="highlight">$204.5K</span> in 2022, showing a maturing network ready to scale.</li>
+              <li><strong>Top-Performing Channels:</strong> Supermarkets shine with <span class="highlight">$207.5K</span>, hypermarkets add <span class="highlight">$92.1K</span>, and specialty stores bring <span class="highlight">$57.7K</span>—a diverse revenue mix to optimize.</li>
+              <li><strong>Product Trends:</strong> Low-fat items (49%) outvalue regular (51%) at <span class="highlight">$318.6K</span> vs. <span class="highlight">$877.2K</span>. Fruits and veggies (<span class="highlight">$175.2K</span>) and snacks (<span class="highlight">$154.8K</span>) lead, with baking goods, breakfast, and dairy as top categories—health-focused products are trending!</li>
+          </ul>
+          <h2>My Strategic Play</h2>
+          <p>This dashboard lights the way! I’d scale Tier 3 outlets to boost revenue, lean hard into the low-fat and health trend with more offerings, and maximize supermarkets as the top channel. With steady growth since 2011 and a 4.0 rating, I’d keep expanding outlets while keeping customers thrilled. That’s how I’d skyrocket BlinkIt—and I’m ready to bring that strategic firepower to your team!</p>
+     
+  <p>The Excel Dashboard below visualizes these insights, empowering BlinkIt’s sales teams to optimize outlet performance and product strategies based on revenue, outlet size, and customer preferences.
+            </p>
+            <img src="Images/blinkit.png" alt="Power BI Dashboard for Top UK YouTubers 2024">
+            <strong>Skills Applied:</strong> Data Cleaning, Excel (Pivot Tables, Charts, Dashboards), Data Visualization, Strategic Analysis.
+          </article>
+    </div>
+    
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <div>
+          <h3>Contact</h3>
+          <p><strong>Address:</strong> Abuja, Nigeria</p>
+          <p><strong>Phone:</strong> <a href="tel:+2348057966225">(234)-8057966225</a></p>
+          <p><strong>Email:</strong> <a href="mailto:absediqni@gmail.com">absediqni@gmail.com</a></p>
+        </div>
+        <div class="container">
+          <div><h3>Social</h3> 
+          <ul class="icons">
+            <li><a href="https://x.com/Absediqn"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/absediqni/"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/absediqni"><i class="fab fa-github"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- Copyright -->
+    <div id="copyright">
+      <p>© AbsediqTheAnalyst | Design: HTMLUP</p>
+    </div>
+</body>
+</html>
