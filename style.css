@@ -90,6 +90,12 @@
     #header a.logo:hover {
       color: #3b82f6;
     }
+    #header  p {
+      display:flex;
+      justify-content: center;
+      padding: 0;
+    }
+
 
     /* Nav */
     #nav {
@@ -140,11 +146,8 @@
       color: #93c5fd;
     }
     /* from other*/
-     .section {
-            margin-bottom: 20px;
-        }
         .highlight {
-            background-color: #f9e79f;
+            background-color: #ecf0f3;
             padding: 5px 10px;
             border-radius: 5px;
             font-weight: bold;
@@ -152,7 +155,7 @@
         .skills {
             background-color: #d5f5e3;
             padding: 10px;
-            border-left: 4px solid #2ecc71;
+            border-left: 4px solid #1a3c5e;
             margin-top: 15px;
    }
 
@@ -258,13 +261,84 @@
     article.post .actions a:hover {
       background: #3b82f6;
     }
+  
+    article.details {
+      background: rgb(255, 255, 255);
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin: 30px;      
+      padding: 20px;
+      transition: transform 0.3s;
+    }
+      article.post.featured {
+        margin-bottom: 40px;
+      }
+  
+  
+      article.details {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        margin-bottom: 30px;      
+        padding: 20px;
+        transition: transform 0.3s;
+  }
+  
+  article.details h2 {
+        font-size: 1.9rem;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #1a3c5e;
+        padding-bottom: 0.5rem;
+  }
+  
+  article.details h2 a {
+        color: #1a3c5e;
+        text-decoration: none;
+  }
+  
+  article.details p {
+        color: #4b5563;
+        margin-bottom: 20px;
+  }
+  
+  article.details ul {
+    color: #4b5563;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+
+article.details ul li {
+    margin-bottom: 10px;
+    list-style-type: disc;
+  }
+  
+  article.details img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+  
+  article.details .actions {
+        text-align: center;
+  }
+  
+  article.details .actions a {
+        background: #1a3c5e;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background 0.3s;
+  }
 
     .posts {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 20px;
     }
-
+   
     /* Footer */
     #footer {
       background-color: #1a3c5e;
@@ -373,4 +447,10 @@
       article.post.featured img {
         height: 200px;
       }
+      article.details h2 {
+        font-size: 1.5rem;
+      }
+
+      article.details img {
+        max-height: 150px;
     }
