@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Actionable insights from data using dashboards of analyzed and transformed data">
+  <meta name="keywords" content="data analyst, dashboard builder, data cleaning, data analysis, data entry, power BI, SQL, tableau">
+  <meta name="author" content="Nuhu ABSediq">
+  <title>Absediq The Analyst</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+  <div id="wrapper" class="fade-in">
+    <!-- Intro -->
+    <div id="intro">
+      <h1>Nuhu Abubakar<br>Portfolio</h1>
+      <p>Data Analyst well versed in SQL, Python, Tableau, Power BI <a href="https://www.linkedin.com/in/absediqni">@absediqni</a>.</p>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+      <div class="container">
+        <a href="#" class="logo" onclick="scrollToSection('main')">PROJECTS</a>
+      </div>
+    </header>
+
+    <!-- Nav -->
+    <nav id="nav">
+      <div class="container">
+        <ul class="links">
+          <li><a href="#" onclick="scrollToSection('intro')">Home</a></li>
+        </ul>
+        <ul class="icons">
+          <li><a href="https://x.com/Absediqn"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/absediqni/"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/absediqni"><i class="fab fa-github"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main -->
+    <div id="main" class="container">
+      <!-- Filter -->
+      <div class="filter">
+        <h3>Filter Projects:</h3>
+        <button data-filter="All" class="active">All</button>
+        <button data-filter="SQL">SQL</button>
+        <button data-filter="Data Cleaning">Data Cleaning</button>
+        <button data-filter="Data Exploration">Data Exploration</button><button data-filter="Data Exploration">Data Visualisation</button>
+        <button data-filter="Tableau">Tableau</button>
+        <button data-filter="Dashboard">Dashboard</button>
+        <button data-filter="Data Analysis">Data Analysis</button>
+       
+      </div>
+
+      <!-- Featured Post -->
+      <article class="post featured" data-tags="SQL,Data Cleaning">
+        <header>
+          <h2>Data Cleaning in SQL</h2>
+          <p>In this project we took a raw world lyaoffs data and transform it in SQL Server to make it more usable for analysis.</p>
+        </header>
+        <a href="https://github.com/absediqni/Portfolio/blob/main/Q_DataCleaning.sql">
+          <img src="Images/layoffs.jpg" alt="Layoffs">
+        </a>
+        <div class="actions">
+          <a href="https://github.com/absediqni/Portfolio/blob/main/Q_DataCleaning.sql">View Project</a>
+        </div>
+      </article>
+
+      <!-- Posts -->
+      
+      <div class="posts">
+        <article class="post" data-tags="SQL,Excel,Dashboard,Data Analysis">
+          <header>
+            <h2>Top UK YouTubers 2024</h2>
+          </header>
+          <p>This project analyzes the top UK-based YouTube channels in 2024 to identify influencers for marketing campaigns. By leveraging a dataset from Kaggle, I extracted key metrics such as subscriber counts and average video views to determine the most influential YouTubers.
+          <img src="Images/youtube.png" alt="Top UK YouTuber s">
+          </p>
+          
+          <div class="actions">
+            <a href="youtube_project.html">View Project</a>
+          </div></article>
+        <article class="post" data-tags="Excel,Data Exploration,Data Visualisation,Data Analysis,Dashboard">
+          <header>
+            <h2>Blinkit Sales Dashboard</a></h2>
+          </header>
+         
+          <p>In this project we use Microsoft Excel to clean, transform, validate and visualise blinkit data (Indian's Last minutes app).</p>
+          <img src="Images/Blinkit.png" alt="Blinkit Image">
+          <div class="actions">
+            <a href="https://github.com/absediqni/Portfolio/blob/main/dataset/BlinkIT%20DB.xlsx">View Project</a>
+          </div>
+        </article>
+        
+        <article class="post" data-tags="Tableau,Dashboard,Data Analysis">
+          <header>
+            <h2>Tableau Dashboards</h2>
+          </header>
+          
+          <p>Tableau Dashboards for projects on AirBnB, Factory downtime, and Movie Data.</p>
+          <a href="https://public.tableau.com/app/profile/abubakar.nuhu/vizzes">
+            <img src="Images/tableau.jpg" alt="Tableau Image">
+          </a>
+          <div class="actions">
+            <a href="https://public.tableau.com/app/profile/abubakar.nuhu/vizzes">View Project</a>
+          </div></article>
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <div>
+          <h3>Contact</h3>
+          <p><strong>Address:</strong> Abuja, Nigeria</p>
+          <p><strong>Phone:</strong> <a href="tel:+2348057966225">(234)-8057966225</a></p>
+          <p><strong>Email:</strong> <a href="mailto:absediqni@gmail.com">absediqni@gmail.com</a></p>
+        </div>
+        <div class="container">
+          <div><h3>Social</h3> 
+          <ul class="icons">
+            <li><a href="https://x.com/Absediqn"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/absediqni/"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/absediqni"><i class="fab fa-github"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Copyright -->
+    <div id="copyright">
+      <p>© AbsediqTheAnalyst | Design: HTMLUP</p>
+    </div>
+  </div>
+
+  <script>
+    // Smooth scrolling
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Project filtering
+    const filterButtons = document.querySelectorAll('.filter button');
+    const posts = document.querySelectorAll('.post');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const filter = button.getAttribute('data-filter');
+
+        // Update active button
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        // Filter posts
+        posts.forEach(post => {
+          const tags = post.getAttribute('data-tags').split(',');
+          if (filter === 'All' || tags.includes(filter)) {
+            post.style.display = 'block';
+          } else {
+            post.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
